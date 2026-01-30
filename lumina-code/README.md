@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Lumina Code (Project VICCS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **"Code is Liquid. Knowledge is Power."**
 
-Currently, two official plugins are available:
+## Escopo do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Lumina Code** é uma plataforma de aprendizado gamificada e imersiva focada no ensino de **Java** através do contexto de **Hytale Modding**. Projetada com uma estética futurista "Liquid Glass" (conceito iOS 26), a plataforma visa transformar o aprendizado técnico árido em uma experiência visualmente deslumbrante e envolvente.
 
-## React Compiler
+### Visão Geral
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo não é apenas ensinar sintaxe, mas criar proficiência real através da construção de mods. A plataforma combina a mecânica de aprendizado rigorosa (estilo Boot.dev) com a satisfação visual e feedback instantâneo de jogos modernos.
 
-## Expanding the ESLint configuration
+### Stack Tecnológica
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React (Vite) + TypeScript
+- **Estilização**: Tailwind CSS v4 + Framer Motion (Animações Fluidas)
+- **Design System**: "Liquid Glass" (Translucidez, Blur, Gradients, Neumorfismo Futurista)
+- **Editor**: Monaco Editor (VS Code in-browser)
+- **Backend/Auth**: Supabase (PostgreSQL, Auth, Realtime)
+- **Deploy**: Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Funcionalidades Principais
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Central de Comando (Dashboard)**:
+    - Hub gamificado com XP, Streaks e Nível de Agente.
+    - Interface imersiva com navegação lateral e widgets de status.
+2. **Lumina Studio (IDE)**:
+    - Ambiente de codificação no navegador.
+    - Editor Monaco com suporte a Java.
+    - Feedback em tempo real e desafios de codificação.
+3. **Hytale Documentation Hub**:
+    - Documentação centralizada para a API do Hytale (mockada para aprendizado).
+    - Recursos visuais e exemplos de código.
+4. **Sistema de Autenticação**:
+    - Login via Discord (OAuth) e Email.
+    - Perfis de usuário persistentes.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Identidade Visual
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto segue estritamente o manual de marca **VICCS 2025**, priorizando:
+- **Cores**: Neon Cyan (Primário), Electric Purple (Accents), Deep Void Black (Fundos).
+- **Tipografia**: Inter / SF Pro (Clean, Moderna).
+- **Vibe**: Cyberpunk High-End, Vidro Líquido, Profundidade.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Developed by VICCS.**
+*Visionary Interfaces & Creative Coding Systems.*
